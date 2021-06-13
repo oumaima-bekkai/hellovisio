@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homefragment">
+
+
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.example.visio_apsy.BlankFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_blank" />
+    <activity
+        android:id="@+id/homefragment"
+        android:name="com.example.visio_apsy.HomeFragment2"
+        android:label="fragment_home2"
+        tools:layout="@layout/fragment_home2" />
+    <action
+        android:id="@+id/action_homefragment_to_loginFragment"
+        app:destination="@id/loginFragment"/>
+    <activity
+        android:id="@+id/loginFragment"
+        android:name="com.example.visio_apsy.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+</navigation>
